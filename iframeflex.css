@@ -1,0 +1,62 @@
+
+
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+iframe {
+  width: 100%;
+  border-width: 0;
+  border-style: none;
+}
+
+.iframe2, .iframe3 {
+  display: none;
+}
+
+
+@media (min-width: 500px){
+
+  .iframe1, .iframe2 {
+    width: calc(50% - 5px);
+    display: inline;
+  }
+  .iframe1 {
+    border-style: solid;
+    border-color: darkgreen;
+    border-right-width: 5px;
+
+  }
+
+}
+
+@media (min-width: 700px){
+
+  .iframe1, .iframe2 {
+    border-style: solid;
+    border-color: darkgreen;
+    border-right-width: 5px;
+    width: calc(33.3% - 6px);
+  }
+  .iframe3 {
+    width: calc(33.3% - 6px);
+    display: inline;
+  }
+}
+
+@media (min-width: 900px){
+
+  .iframe1, .iframe2 {
+    border-style: solid;
+    border-color: darkgreen;
+    border-right-width: 5px;
+    width: calc( calc(100% - 320px) / 2);
+  }
+  .iframe3 {
+    width: 300px
+  }
+}
